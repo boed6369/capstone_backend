@@ -2,7 +2,7 @@
 <ul>
   {% for unit in units %}
   <li>
-    <a href="">{{ unit.name }}</a>
+    <a href="{% url 'unit_detail' pk=unit.pk %}">{{ unit.name }}</a>
   </li>
   {% endfor %}
 </ul>

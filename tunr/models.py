@@ -6,7 +6,7 @@ class Artist(models.Model):
         return self.army_name 
 
 class Unit(models.Model):
-    Artist = models.ForeignKey(Artist, on_delete=models.CASCADE, related_name='unit')
+    Artist = models.ForeignKey(Artist, on_delete=models.CASCADE, related_name='units')
     name = models.CharField(max_length=100, default='no name')
     bonus_abilites = models.TextField()
     stats = models.CharField(max_length=200, default="none")
